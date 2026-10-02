@@ -9,9 +9,32 @@ Este case mostra o raciocínio de decisão. Não é uma história de sucesso: o 
 ## Contexto
 
 - Suíte de agentes de IA para pré-venda, qualificação e reativação de leads, integrada ao CRM da imobiliária.
-- **Dor de origem:** segundo o levantamento do discovery, cerca de metade dos leads se perdia no WhatsApp pessoal dos corretores.
+- **Dor de origem:** segundo levantamento registrado no projeto, cerca de metade dos leads se perdia no WhatsApp pessoal dos corretores.
 - **Ferramentas do projeto:** CRM da imobiliária, WhatsApp (Z-API), Twilio Voice e ElevenLabs.
 - **Meu papel:** PO da suíte. PRD (até a v5), épicos, redesenho do BDR para dois canais, análise de impacto dos preços do WhatsApp, negociação de escopo com o cliente e testes de aceite.
+
+## Responsabilidades
+
+### Minha responsabilidade
+
+| Atividade | Status |
+|---|---|
+| PRD (até a v5) e épicos | Comprovado |
+| Redesenho do BDR para dois canais | Comprovado |
+| Análise de impacto dos preços do WhatsApp, com simulador | Comprovado |
+| Negociação de escopo com o cliente | Comprovado |
+| Testes de aceite com o time | Comprovado |
+
+### Responsabilidade de outras partes
+
+| Parte | Papel documentado |
+|---|---|
+| Time de desenvolvimento (dois devs) | Implementação dos agentes e integrações. Detalhamento técnico: **[A VALIDAR]** |
+| Customer Success | Acompanhamento do cliente |
+| Cliente | Mudanças de prioridade, troca de CRM, script de SDR próprio |
+| Comercial | Venda original do projeto. Detalhamento: **[A VALIDAR]** |
+
+O produto utilizou WhatsApp (Z-API), Twilio Voice e ElevenLabs. Atuei na especificação e na gestão do produto integrado a essas plataformas, não na implementação.
 
 ## Problema
 
@@ -23,11 +46,11 @@ Três mudanças pressionaram o escopo ao mesmo tempo:
 
 ## Divergência
 
-| Lado | Posição |
+| Ponto | Registro |
 |---|---|
-| Cliente | Queria manter o escopo original e, em um momento, propôs trocar o BDR, já em fase final, por outra funcionalidade |
-| Tecnologia | Apontava o épico como inviável no cronograma |
-| Produto | Precisava preservar o valor contratado sem comprometer a previsibilidade das entregas |
+| Escopo | Parte do escopo pedido era inviável no cronograma. Quem apontou a inviabilidade: **[A VALIDAR]** |
+| Prioridade | Com o BDR em fase final, o cliente propôs trocá-lo por outra funcionalidade |
+| Objetivo do Produto | Preservar o valor contratado sem comprometer a previsibilidade das entregas |
 
 ## Opções
 
@@ -59,7 +82,7 @@ Três mudanças pressionaram o escopo ao mesmo tempo:
 
 1. **Cancelar o épico original** e reinvestir o esforço em enriquecimentos dos épicos que já geravam valor: sequência de aquecimento, pontuação de leads (lead scoring) e integração do WhatsApp com o CRM.
 2. **Não recomendar API não oficial**, mesmo com o aumento de custo.
-3. **Análise de custo com simulador interativo**, comunicada ao cliente, para que a decisão sobre o volume de mensagens fosse dele, com números.
+3. **Análise de custo com simulador interativo**, comunicada ao cliente.
 4. **BDR em dois canais:** WhatsApp e ligação por voz com IA (Twilio e ElevenLabs), com canal escolhido lead a lead pela própria operação, em planilha, sem depender do time técnico.
 5. **Cadência de reativação** em 30, 60 e 90 dias, com horários fixos de disparo.
 6. **Script do agente** substituído pelo script de SDR do próprio cliente, focado em qualificação.
@@ -70,11 +93,11 @@ A decisão virou escopo verificável:
 
 - Novo escopo acordado com o cliente e registrado no PRD.
 - Épico do BDR em dois canais especificado até a versão final.
-- Teste de aceite com o time encontrou bugs críticos antes da entrega: ordem das mensagens e ausência de tags. Os dois foram registrados para correção.
+- Teste de aceite com o time encontrou bugs críticos antes da entrega: ordem das mensagens e ausência de tags. Correção desses bugs: **[A VALIDAR]**.
 
 ## MVP
 
-O recorte foi a própria decisão de escopo: o épico inviável saiu, e o esforço foi para o fluxo principal de pré-venda, que precisava atravessar a jornada do lead de ponta a ponta.
+**[INFERÊNCIA BASEADA EM EVIDÊNCIAS]** O recorte foi a própria decisão de escopo: o épico inviável saiu, e o esforço foi para o fluxo principal de pré-venda, que precisava atravessar a jornada do lead de ponta a ponta.
 
 ## Riscos
 
@@ -90,7 +113,7 @@ O recorte foi a própria decisão de escopo: o épico inviável saiu, e o esfor�
 |---|---|
 | Novo escopo | Acordado com o cliente |
 | Fluxo principal do BDR (entrada de leads e relatórios) | Funcionando no teste de aceite |
-| Hipótese de valor | A sequência de nutrição buscava elevar o comparecimento a visitas de 45% a 60% para 65% a 70%. **Estimativa do discovery, não resultado medido** |
+| Hipótese de valor | A sequência de nutrição buscava elevar o comparecimento a visitas de 45% a 60% para 65% a 70%. **Estimativa registrada no projeto, não resultado medido** |
 | Resultado em produção | **[NÃO DOCUMENTADO]** |
 
 ## O que não deu certo
