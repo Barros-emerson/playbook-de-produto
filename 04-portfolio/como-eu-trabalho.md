@@ -37,6 +37,8 @@ Product Owner de produtos de IA sob medida. Faço a ponte entre a dor do negóci
 
 ## Experiência
 
+Seis anos em tecnologia, dos quais quase cinco em gestão de projetos e produto.
+
 | Período | Contexto | Papel |
 |---|---|---|
 | 2026 | Software house e consultoria de IA: produtos de IA sob medida para clientes de vários setores | Product Owner |

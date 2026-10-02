@@ -4,7 +4,7 @@ Separação honesta entre o que usei em projeto real e o que conheço como conce
 
 - **Prática:** usado em projeto real, com evidência nos cases ou em artefatos de trabalho.
 - **Conceito:** conheço o funcionamento e o vocabulário, sem experiência prática documentada.
-- **[A VALIDAR]:** declarado, ainda sem evidência registrada neste portfólio.
+- **[A VALIDAR]:** ainda sem evidência registrada neste portfólio.
 
 Minha atuação em tecnologia é de **especificação**: papel de cada sistema, fluxo de dados, limites, dependências, riscos e critérios de aceite. A implementação é do time de engenharia. Não desenvolvo em Python, Java ou SQL, e não opero nuvem (AWS, Azure) nem pipelines de CI/CD.
 
@@ -49,7 +49,7 @@ Minha atuação em tecnologia é de **especificação**: papel de cada sistema, 
 | SERPRO Integra Contador, BrasilAPI, Infosimples | Prática, como especificação | Case 01 |
 | Open Finance (Pluggy) | Prática, como especificação | Case 01 |
 | eSocial e FGTS | Prática, como especificação | Case 01 |
-| CRMs (ex.: Pipedrive, Kommo e CRMs do setor imobiliário) | Prática | Diversos projetos |
+| CRMs (ex.: HubSpot, Pipedrive, Kommo e CRMs do setor imobiliário) | Prática | Diversos projetos |
 | ERPs e sistemas de gestão (ex.: Bling, AVEC, Alterdata) | Prática | Case 01 e outros projetos |
 | Webhooks | Conceito | |
 
@@ -62,7 +62,6 @@ Minha atuação em tecnologia é de **especificação**: papel de cada sistema, 
 | Miro | Prática | Mapeamento de fluxos e processos |
 | Google Docs e Sheets | Prática | PRD, roteiros de teste, simuladores |
 | Fathom | Prática | Registro de reuniões de discovery e alinhamento |
-| GitHub | [A VALIDAR] | |
-| Figma | [A VALIDAR] | |
-| Notion | [A VALIDAR] | |
-| Confluence | [A VALIDAR] | |
+| GitHub | Prática | Acompanhamento do fluxo do time |
+| Figma | Prática | Fluxos, protótipos e revisão de telas com o time |
+| Notion | Prática | Documentação e organização de conhecimento |

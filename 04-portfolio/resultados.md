@@ -1,6 +1,6 @@
 # Resultados
 
-Somente números com origem conhecida. Cada métrica traz o tipo de comprovação e o contexto. Quando a metodologia de cálculo não está documentada, a métrica aparece sem explicação inventada.
+Somente números com origem comprovada. Cada métrica traz o tipo de comprovação e o contexto.
 
 ## Volume de trabalho comprovado (2026)
 
@@ -20,14 +20,6 @@ Somente números com origem conhecida. Cada métrica traz o tipo de comprovaçã
 | Épicos no PRD de automação contábil | 16 | [Case 01](../02-cases/01-automacao-contabil-whatsapp/) |
 | Horas estimadas | 743 h, para os épicos 1 a 13 | [Case 01](../02-cases/01-automacao-contabil-whatsapp/) |
 | Agentes de IA em produção mapeados na revisão de arquitetura | 5, contra 14 documentados | [Case 02](../02-cases/02-assistente-juridico-rag/) |
-
-## Métricas declaradas
-
-| Indicador | Valor | Contexto | Situação |
-|---|---|---|---|
-| Redução de retrabalho | 18% | Experiência anterior em aplicativo de saúde (2024 a 2025) | Declarada; metodologia de cálculo **[NÃO DOCUMENTADO]** |
-| Aumento de previsibilidade | 25% | Experiência anterior em aplicativo de saúde (2024 a 2025) | Declarada; metodologia de cálculo **[NÃO DOCUMENTADO]** |
-| Produtos de IA em produção | +10 | | **[A VALIDAR]**: o levantamento comprova 19 projetos conduzidos, sem distinguir quantos estão em produção |
 
 ## O que ainda não tem medição
 
