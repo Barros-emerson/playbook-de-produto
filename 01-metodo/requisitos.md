@@ -10,6 +10,10 @@ Como a dor confirmada no discovery vira escopo que o time consegue construir e o
 
 Exemplo de restrição que mudou a solução: em um call center, a discadora recebia apenas o áudio da chamada e não processava dados de volta. Em vez de insistir na integração da tabulação, a decisão foi gerar o relatório de tabulação no ambiente próprio da solução ([case 04](../02-cases/04-agente-de-voz-call-center/)).
 
+## Requisitos não funcionais
+
+Limites de sistemas de terceiros são requisitos, não detalhes de implementação. Exemplo real: a discadora de um call center derrubava chamadas quando o agente levava mais de 3 segundos para responder ([case 04](../02-cases/04-agente-de-voz-call-center/)).
+
 ## PRD
 
 - **Um PRD por projeto**, com vários épicos dentro. É a fonte única da verdade do escopo.
@@ -29,7 +33,7 @@ Template: [03-templates/prd.md](../03-templates/prd.md).
 
 - Formato: **como** [persona], **quero** [ação], **para** [benefício de negócio].
 - Cada história tem contexto, critérios de aceite, fora do escopo e dependências.
-- Investigação não é história de produto com critério de aceite: vira tarefa. "Ouvir as gravações completas do lote de teste" foi tratada como tarefa, não como critério.
+- Investigação não é critério de aceite. "Ouvir as gravações completas do lote de teste" entrou no épico de correções como história própria de investigação, e não como critério de outra história.
 
 Template: [03-templates/user-story.md](../03-templates/user-story.md).
 
@@ -44,4 +48,4 @@ Regra que adotei como padrão: **toda história tem critério de aceite testáve
 
 Critério vago típico que essa regra elimina: "responder bem o cliente".
 
-Template com exemplos ruim x bom: [03-templates/criterios-de-aceite.md](../03-templates/criterios-de-aceite.md).
+Detalhes da regra: [criterios-de-aceite.md](criterios-de-aceite.md). Template com exemplos ruim x bom: [03-templates/criterios-de-aceite.md](../03-templates/criterios-de-aceite.md).

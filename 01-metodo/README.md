@@ -1,6 +1,6 @@
 # Método
 
-Como conduzo um produto do primeiro contato ao aceite. O método nasceu da prática em projetos de IA sob medida e foi formalizado em um plano de redução de retrabalho de minha autoria: informação incompleta não avança de etapa.
+Como conduzo um produto do primeiro contato ao aceite. O método nasceu da prática em projetos de IA sob medida. Os quatro portões e a regra de critério de aceite testável foram formalizados em um plano de redução de retrabalho de minha autoria. O funil de triagem da priorização é o processo de consultoria da empresa em que atuei, que apliquei nos projetos.
 
 ## Fluxo ponta a ponta
 
@@ -14,12 +14,13 @@ Como conduzo um produto do primeiro contato ao aceite. O método nasceu da prát
 | 06 | MVP | Qual o menor escopo que entrega valor e testa a hipótese? | [definicao-de-mvp.md](definicao-de-mvp.md) |
 | 07 | PRD | Onde está a fonte única da verdade do escopo? | [requisitos.md](requisitos.md#prd) e [template](../03-templates/prd.md) |
 | 08 | User stories | Como o escopo vira unidade de trabalho para o time? | [requisitos.md](requisitos.md#user-stories) e [template](../03-templates/user-story.md) |
-| 09 | Critérios de aceite | Como o time sabe que a entrega está correta? | [template](../03-templates/criterios-de-aceite.md) |
+| 09 | Critérios de aceite | Como o time sabe que a entrega está correta? | [criterios-de-aceite.md](criterios-de-aceite.md) e [template](../03-templates/criterios-de-aceite.md) |
 | 10 | DoR e DoD | Quando a história pode entrar no desenvolvimento e quando está pronta? | [handoff-e-validacao.md](handoff-e-validacao.md) e [template](../03-templates/dor-dod.md) |
 | 11 | Desenvolvimento | Como o PO sustenta o time durante a execução? | [handoff-e-validacao.md](handoff-e-validacao.md#durante-o-desenvolvimento) |
 | 12 | Validação | Como confirmo com o cliente que o critério passou? | [handoff-e-validacao.md](handoff-e-validacao.md#validação-e-aceite) |
-| 13 | Gestão de riscos | O que pode derrubar a entrega e como mitigar? | [gestao-de-riscos.md](gestao-de-riscos.md) |
-| 14 | Melhoria contínua | O que a entrega ensinou e o que muda no processo? | [handoff-e-validacao.md](handoff-e-validacao.md#melhoria-contínua) |
+| 13 | Tomada de decisão | Com quais critérios mantenho, troco ou retiro escopo? | [tomada-de-decisao.md](tomada-de-decisao.md) |
+| 14 | Gestão de riscos | O que pode derrubar a entrega e como mitigar? | [gestao-de-riscos.md](gestao-de-riscos.md) |
+| 15 | Melhoria contínua | O que a entrega ensinou e o que muda no processo? | [handoff-e-validacao.md](handoff-e-validacao.md#melhoria-contínua) |
 
 ## Os quatro portões
 

@@ -29,4 +29,5 @@ Essa pergunta foi feita por um cliente durante a apresentação de um MVP, e é 
 - [ ] O fluxo principal atravessa a jornada de ponta a ponta
 - [ ] O que ficou fora está listado no PRD como "fora do escopo"
 - [ ] As dependências que continuam necessárias estão explícitas
+- [ ] O trade-off está escrito: o que o recorte reduz e o que não reduz
 - [ ] A métrica que valida o MVP está definida

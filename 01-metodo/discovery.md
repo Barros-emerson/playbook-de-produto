@@ -42,6 +42,23 @@ Depois da conversa, a dor precisa caber em uma frase e ter tamanho. Três verifi
 
 **Exemplo real, anonimizado:** no discovery de uma empresa de planos assistenciais, a entrevista com o responsável pela validação mostrou que a tarefa consumia de 1,5 a 2 horas por dia. A dor foi registrada em horas, e a recomendação incluiu uma melhoria que não dependia de IA.
 
+## Artefatos de discovery em consultorias de IA
+
+Nas consultorias que conduzi, o discovery gerou um pacote de documentos antes de qualquer especificação:
+
+| Artefato | Para que serve |
+|---|---|
+| DDE (documento de discovery) | Consolidar contexto, dores e achados das entrevistas |
+| Inventário de processos | Registrar o processo atual (AS-IS), etapa por etapa |
+| Sistemas e lacunas | Mapear os sistemas do cliente, o que cada um faz e onde falta integração |
+| Fricções e oportunidades | Classificar as dores por impacto e transformá-las em oportunidades |
+| Sugestões de melhoria sem IA | Registrar o que se resolve com ajuste de processo, sem automação |
+| Viabilidade das implementações de IA | Avaliar o que é viável com os dados e sistemas disponíveis |
+
+Desenho formal do processo futuro (TO-BE) como artefato separado: **[A VALIDAR]**.
+
+Aplicação real: [case 05](../02-cases/05-consultoria-ia-saude/) (9 fluxos de processo mapeados) e [case 06](../02-cases/06-discovery-planos-assistenciais/) (pelo menos cinco entrevistas individuais).
+
 ## Depois da reunião
 
 - Registrar decisões e pendências em até 24 horas.

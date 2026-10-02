@@ -1,12 +1,12 @@
 # Gestão de riscos
 
-Os riscos abaixo não são uma lista teórica. Cada um apareceu em projeto real e virou regra de trabalho.
+Os riscos abaixo não são uma lista teórica. Cada um apareceu em projeto real.
 
 ## Riscos recorrentes em produtos de IA sob medida
 
 | Risco | Como apareceu | Mitigação que adoto |
 |---|---|---|
-| **Expectativa formada na venda diferente do especificado** | O cliente esperava um agente adaptativo, como na demonstração comercial; o especificado era um roteiro mais rígido | Capturar a promessa comercial no portão de Entrada e escrevê-la no PRD |
+| **Expectativa formada na venda diferente do entregue** | O cliente esperava um agente adaptativo, como na demonstração comercial; o entregue era um roteiro mais rígido | Capturar a promessa comercial no portão de Entrada e escrevê-la no PRD |
 | **Teste que não reproduz o ambiente real** | Teste de volume com 40 mil chamadas simuladas, sem o ambiente de produção do cliente | Teste de carga não substitui teste no ambiente do cliente; o roteiro de testes exige os dois |
 | **Limite técnico de sistema de terceiro** | Latência de cerca de 6 s para responder, contra limite de 3 s da discadora, causando quedas | Levantar limites dos sistemas do cliente no discovery e transformar em critério de aceite |
 | **Integração que o sistema do cliente não suporta** | A discadora recebia só o áudio e não processava dados de volta | Validar a viabilidade da integração antes de prometer a funcionalidade; ter plano alternativo |
