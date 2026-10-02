@@ -2,101 +2,127 @@
 
 **Setor:** jurídico | **Papel:** Product Owner | **Período:** jul. a set. de 2026 | **Status:** em sustentação
 
-> **Resumo.** Um escritório de advocacia usava um assistente de IA com RAG, dividido em agentes por área do direito. Assumi o produto para correções, revisão de arquitetura e monetização. A revisão mostrou que a documentação indicava 14 agentes, mas apenas 5 estavam em produção. Corrigi a fonte da verdade antes de qualquer nova funcionalidade e estruturei o modelo de custo, com recomendação de repassar a infraestrutura como mensalidade de serviço.
+> **Resumo.** Um escritório de advocacia usava um assistente de IA com RAG, dividido em agentes por área do direito. Atuei como PO das correções, da revisão de arquitetura e da monetização. A revisão mostrou que a documentação indicava 14 agentes, mas apenas 5 estavam em produção. Corrigi a fonte da verdade, documentei a arquitetura da base, escrevi as histórias de trial e cobrança e recomendei o modelo de custo.
 
-## Contexto
+## 1. Contexto
 
-Escritório de advocacia com um assistente de IA baseado em RAG: o assistente responde com base em uma base de conhecimento jurídica, dividida em agentes especializados por área do direito. O produto já estava em uso quando o assumi.
+Escritório de advocacia com um assistente de IA baseado em RAG: o assistente responde a partir de uma base de conhecimento jurídica, dividida em agentes especializados por área do direito. O produto já estava em operação.
 
-**Meu papel:** PO das correções, da revisão de arquitetura e da monetização.
+## 2. Problema
 
-## Problema
+1. Bugs e problemas de desempenho no produto em operação.
+2. Divergência entre o escopo documentado e o escopo real.
+3. Modelo de custo de infraestrutura a redefinir, e com ele o modelo de cobrança.
 
-Três problemas ao mesmo tempo:
+## 3. Meu papel
 
-1. **Correções e desempenho:** havia bugs e problemas de desempenho a resolver.
-2. **Escopo percebido x escopo real:** a documentação de arquitetura indicava muito mais agentes do que de fato estavam em produção.
-3. **Modelo de custo:** o custo de infraestrutura precisava ser redefinido, e com ele o modelo de cobrança do cliente.
+### Minha responsabilidade
 
-## Discovery
+| Atividade | Status |
+|---|---|
+| Product Owner das correções, da arquitetura e da monetização | Comprovado |
+| Revisão e correção da documentação de arquitetura | Comprovado |
+| Documentação da arquitetura da base, manual de migração e backlog de precificação (12 a 31/08) | Comprovado |
+| Histórias de trial, cobrança e projetos no backlog | Comprovado |
+| Estruturação das alternativas de modelo de custo e recomendação | Comprovado |
 
-Revisão da documentação de arquitetura contra o que estava efetivamente em produção.
+### Responsabilidade do time técnico
+
+| Atividade | Status |
+|---|---|
+| Implementação das correções e melhorias de desempenho | **[A VALIDAR]**: a conclusão das correções está registrada; a execução técnica cabe ao time de desenvolvimento, sem detalhamento documentado |
+| Infraestrutura, modelos de linguagem e base vetorial | **[EVIDÊNCIA INSUFICIENTE]** |
+
+## 4. Problemas encontrados
+
+| Problema | Evidência |
+|---|---|
+| Documentação com 14 agentes; 5 em produção | Comprovado |
+| Correções de bugs e desempenho pendentes | Comprovado |
+| Ausência de modelo de cobrança definido para o custo de infraestrutura | Comprovado |
+
+## 5. Arquitetura documentada
 
 | Fonte | Agentes |
 |---|---|
-| Documentação de arquitetura | 14 |
-| Em produção | 5: Civil, Penal, Empresarial, Trabalhista e Tributário |
+| Documentação inicial | 14 |
+| Em produção, após a revisão | 5: Civil, Penal, Empresarial, Trabalhista e Tributário |
 
-Método de verificação de cada agente (acesso ao ambiente, testes, conversa com engenharia): **[NÃO DOCUMENTADO]**.
+Documentei a arquitetura da base de conhecimento. O conteúdo técnico desse documento (estrutura da base, modelos, infraestrutura) não é reproduzido neste portfólio: **[EVIDÊNCIA INSUFICIENTE neste portfólio]**.
 
-## Insights
+## 6. RAG
 
-- **Documento desatualizado é dívida de produto.** Quando o cliente acredita ter mais do que tem, qualquer conversa comercial começa torta: o cliente cobra o que não existe, e a precificação parte de uma base errada.
-- O modelo de custo não podia ser discutido antes de a base de agentes estar correta, porque o custo depende do que de fato roda.
+O assistente responde com base em uma base de conhecimento jurídica (RAG). Componentes internos, como modelo de embeddings, banco vetorial e estratégia de recuperação: **[EVIDÊNCIA INSUFICIENTE]**.
 
-## Decisão
+## 7. Agentes
 
-| Decisão | Por quê |
+```mermaid
+flowchart LR
+    U["Usuário do escritório"] --> A["Assistente jurídico"]
+    A --> AG["5 agentes por área: Civil, Penal, Empresarial, Trabalhista, Tributário"]
+    AG <--> K["Base de conhecimento jurídica (RAG)"]
+    AG --> R["Resposta ao usuário"]
+```
+
+> **Arquitetura conceitual reconstruída a partir das evidências funcionais disponíveis.** Como a pergunta chega ao agente de cada área: **[EVIDÊNCIA INSUFICIENTE]**.
+
+## 8. Correções
+
+Correções de bugs e melhorias de desempenho concluídas. Métricas antes e depois (tempo de resposta, taxa de erro): **[EVIDÊNCIA INSUFICIENTE]**.
+
+## 9. Produto
+
+Com a base de agentes corrigida, o produto passou a ser tratado como serviço recorrente: precificação, trial e cobrança entraram no backlog.
+
+## 10. Monetização
+
+| Item | Conteúdo |
 |---|---|
-| Corrigir a documentação de arquitetura antes de qualquer nova funcionalidade | Toda decisão seguinte, técnica ou comercial, dependia da fonte da verdade |
-| Estruturar alternativas de modelo de custo e recomendar uma | O cliente precisava decidir com opções claras, não com uma conta solta |
-| Recomendação: o fornecedor mantém a infraestrutura e repassa o custo, com margem, como mensalidade de serviço (SaaS) | Previsibilidade de custo para o cliente e operação centralizada para o fornecedor |
+| Recomendação | A empresa fornecedora mantém a infraestrutura e repassa o custo, com margem, como mensalidade de serviço (SaaS) |
+| Demais alternativas avaliadas | **[EVIDÊNCIA INSUFICIENTE neste portfólio]** |
+| Backlog de precificação | Documentado |
 
-Detalhamento das demais alternativas avaliadas: **[NÃO DOCUMENTADO neste portfólio]**.
+## 11. Trial
 
-## Requisitos
+História de período de teste de 7 dias no backlog.
 
-- Correções e melhorias organizadas em histórias com critérios de aceite verificáveis.
-- Histórias de monetização: período de teste (trial) de 7 dias e cobrança.
-- Backlog de precificação.
-
-**[ILUSTRATIVO]** Critérios de aceite no formato que uso, para a história de trial:
+**[ILUSTRATIVO]** Critérios no formato que uso:
 
 | # | Critério |
 |---|---|
 | CA-01 | Um usuário novo tem acesso completo ao assistente por 7 dias corridos a partir do cadastro. |
 | CA-02 | No 8º dia sem assinatura ativa, o usuário vê a tela de assinatura ao tentar fazer uma consulta. |
 
-## Solução
+## 12. Cobrança
 
-Arquitetura conceitual, limitada ao que está documentado:
+História de cobrança no backlog. Regras de cobrança: **[EVIDÊNCIA INSUFICIENTE neste portfólio]**.
 
-```mermaid
-flowchart LR
-    U["Usuário do escritório"] --> A["Assistente jurídico"]
-    A --> AG["Agentes por área do direito: Civil, Penal, Empresarial, Trabalhista, Tributário"]
-    AG --> K["Base de conhecimento jurídica (RAG)"]
-    K --> AG
-    AG --> R["Resposta ao usuário"]
-```
+**[A VALIDAR: desfecho comercial do aditivo não localizado nas evidências disponíveis.]** O modelo de monetização recomendado não equivale a um aditivo comercial aprovado.
 
-> **Arquitetura conceitual.** O mecanismo que direciona a pergunta ao agente da área, os modelos de linguagem usados e a estrutura interna da base não estão documentados neste portfólio: **[NÃO DOCUMENTADO]**.
+## 13. Decisões
 
-Artefatos entregues: documentação da arquitetura da base, manual de migração e backlog de precificação.
-
-## MVP
-
-Não se aplica: o produto já estava em produção. A decisão de produto equivalente foi priorizar a correção da fonte da verdade e as correções sobre qualquer funcionalidade nova.
-
-## Riscos
-
-| Risco | Tratamento |
+| Decisão | Por quê |
 |---|---|
-| Conversa comercial baseada em escopo inexistente | Documentação corrigida para os 5 agentes reais |
-| Custo de infraestrutura sem dono definido | Modelo de custo com recomendação explícita |
-| Resposta fora do que a base sustenta, risco inerente a RAG | Especificação de comportamento e testes por área. Critérios específicos do projeto: **[A VALIDAR]** |
+| Corrigir a documentação de arquitetura antes de qualquer nova funcionalidade | Documento desatualizado distorce a conversa comercial (aprendizado registrado) |
+| Recomendar o repasse da infraestrutura como mensalidade | Racional: **[A VALIDAR]** |
 
-## Validação
+## 14. Resultados
 
-- Correções de bugs e melhorias de desempenho concluídas.
-- Métricas de desempenho antes e depois (tempo de resposta, taxa de erro): **[NÃO DOCUMENTADO]**.
+| Resultado | Status |
+|---|---|
+| Documentação corrigida para os 5 agentes em produção | Comprovado |
+| Correções e melhorias de desempenho concluídas | Comprovado |
+| Arquitetura da base, manual de migração e backlog de precificação entregues | Comprovado |
+| Modelo de custo recomendado | Comprovado |
+| Produto em sustentação | Comprovado |
+| Aditivo comercial | **[A VALIDAR]** |
 
-## Resultado
+## 15. Aprendizados
 
-**Resultado documentado:** documentação de arquitetura corrigida para os 5 agentes em produção; correções e melhorias de desempenho concluídas; modelo de custo recomendado; produto em sustentação.
+Corrigir a fonte da verdade vem antes de qualquer nova funcionalidade. Em produtos de IA, "quantos agentes temos" define custo, preço e expectativa do cliente.
 
-**Pendente:** o aditivo comercial dependia da confirmação do modelo de cobrança pelo cliente. Desfecho: **[A VALIDAR]**.
+## 16. Limitações
 
-## Aprendizado
-
-Corrigir a fonte da verdade vem antes de qualquer nova funcionalidade. Em produtos de IA, o "quantos agentes temos" não é detalhe técnico: define custo, preço e expectativa do cliente.
+- Não há métrica de desempenho antes e depois das correções.
+- Os componentes técnicos do RAG não estão documentados neste portfólio.
+- O desfecho comercial do modelo de cobrança não foi localizado.
