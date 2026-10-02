@@ -2,7 +2,7 @@
 
 ## Posicionamento
 
-Product Owner de produtos de IA sob medida. Faço a ponte entre a dor do negócio e o que a engenharia constrói: discovery, requisitos, escopo, priorização e aceite. Minha profundidade técnica é de especificação. Não programo.
+Product Owner com forte interface entre negócio, produto e tecnologia, em produtos de IA sob medida. Faço a ponte entre a dor do negócio e o que a engenharia constrói: discovery, requisitos, escopo, priorização e aceite. Minha profundidade técnica é de especificação. Não programo.
 
 ## O que faço em cada projeto
 
