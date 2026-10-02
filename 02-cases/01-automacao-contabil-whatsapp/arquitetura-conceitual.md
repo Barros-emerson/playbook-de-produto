@@ -1,6 +1,6 @@
 # Arquitetura conceitual: automação contábil via WhatsApp
 
-> **Arquitetura conceitual.** Representação de produto, feita para alinhar escopo, integrações e pontos de falha com o cliente e com a engenharia. Não é a arquitetura técnica oficial do sistema: componentes internos, infraestrutura e tecnologias de implementação não estão representados.
+> **Arquitetura conceitual reconstruída a partir das evidências funcionais disponíveis** (escopo, regras e integrações do PRD). Não é a arquitetura técnica oficial: o produto não chegou a ser implementado, e componentes internos, infraestrutura e tecnologias de implementação não estão representados. A "camada de automação" e o fluxo entre os blocos são reconstrução de produto.
 
 ## Diagrama
 
@@ -33,7 +33,7 @@ flowchart TD
 
 ## Possíveis pontos de falha
 
-Análise de produto sobre a arquitetura conceitual:
+**[INFERÊNCIA BASEADA EM EVIDÊNCIAS]** Análise de produto sobre a arquitetura conceitual, não registrada no PRD original:
 
 | Ponto | Falha possível | Pergunta que o PRD precisa responder |
 |---|---|---|
