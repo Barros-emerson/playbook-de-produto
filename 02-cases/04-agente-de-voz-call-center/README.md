@@ -1,6 +1,6 @@
 # Case 04: Agente de voz em call center
 
-**Setor:** serviços financeiros | **Papel:** Product Owner | **Período:** jul. a set. de 2026 | **Status:** correções concluídas; tabulação em massa pendente
+**Setor:** serviços financeiros | **Papel:** Product Owner | **Período:** jul. a set. de 2026 | **Status:** [CONFLITO ENTRE FONTES: VALIDAR] histórias de correção registradas como concluídas; status do projeto em set. de 2026: correções em testes
 
 > **Resumo.** Agente de IA de voz que atende o lead pela discadora da operação, via SIP Trunk, qualifica e tabula antes do atendimento humano. Depois da entrega, surgiram problemas de expectativa, integração, teste e latência. Conduzi a reunião de crise, criei o épico de correções no mesmo dia e mudei a solução onde o sistema de terceiro não suportava o desenho original.
 
@@ -10,13 +10,38 @@ Call center com triagem feita por atendentes antes de direcionar cada cliente. A
 
 **Meu papel:** PO da entrega e das correções. Escrevi o épico e as histórias, montei o roteiro de testes, conduzi a demonstração, o alinhamento técnico com o fornecedor da discadora e a reunião de crise.
 
+## Responsabilidades
+
+### Minha responsabilidade
+
+| Atividade | Status |
+|---|---|
+| Épico e histórias da triagem | Comprovado |
+| Roteiro de testes e guia de alinhamento técnico | Comprovado |
+| Demonstração ao cliente | Comprovado |
+| Alinhamento com o fornecedor da discadora | Comprovado |
+| Condução da reunião de crise e plano de ação | Comprovado |
+| Épico de correções, criado no mesmo dia da crise | Comprovado |
+| Auditoria pós-entrega contra a DoD | Comprovado |
+
+### Responsabilidade de outras partes
+
+| Parte | Papel documentado |
+|---|---|
+| Time de desenvolvimento (três devs) | Implementação do agente, integração por SIP Trunk e correções. Detalhamento técnico: **[A VALIDAR]** |
+| Gestor da área | Presente na reunião de crise |
+| Comercial | Venda e demonstração comercial do projeto |
+| Fornecedor da discadora | Configuração do lado da discadora |
+
+O produto utilizou Twilio, ElevenLabs (após a migração) e a discadora do cliente via SIP Trunk. Atuei na especificação, nos testes e na gestão do produto, não na implementação dessas integrações.
+
 ## Problema
 
 Depois da entrega, quatro problemas apareceram juntos:
 
 | Problema | Natureza |
 |---|---|
-| O cliente esperava um agente adaptativo, como na demonstração comercial; o especificado era um roteiro mais rígido | Expectativa |
+| O cliente esperava um agente adaptativo, como na demonstração comercial; o entregue era um roteiro mais rígido | Expectativa |
 | A discadora recebia apenas o áudio da chamada e não processava dados de volta, o que inviabilizava a tabulação integrada | Integração |
 | O teste foi só de volume (40 mil chamadas simuladas), sem o ambiente de produção do cliente | Validação |
 | Latência de cerca de 6 s para responder ao "alô", contra limite de 3 s da discadora, causando quedas | Limite técnico |
@@ -24,7 +49,7 @@ Depois da entrega, quatro problemas apareceram juntos:
 ## Discovery
 
 - **Auditoria pós-entrega** contra a Definition of Done, que revelou lacunas justamente nas histórias de tabulação e de escalonamento para atendente humano.
-- **Escuta das gravações completas** do lote de teste, tratada como tarefa de investigação, não como critério de aceite.
+- **Escuta das gravações completas** do lote de teste, registrada como história própria de investigação, não como critério de aceite.
 - **Alinhamento técnico** com o fornecedor da discadora para entender o que o sistema aceitava.
 
 ## Insights
@@ -49,7 +74,7 @@ Histórias do épico de correções:
 |---|---|
 | Chamadas sem encerramento | Encerramento proativo da chamada pela IA |
 | Frases repetitivas | Diversificação de frases em objeções |
-| Diagnóstico sem base | Tarefa de investigação: ouvir as gravações completas do lote de teste |
+| Diagnóstico sem base | História de investigação: ouvir as gravações completas do lote de teste |
 | Operador virtual fora da URA | Ação: alinhamento técnico com o fornecedor da discadora |
 
 **[ILUSTRATIVO]** Critérios binários no formato que passei a usar:
